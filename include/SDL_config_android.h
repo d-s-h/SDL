@@ -144,7 +144,7 @@
 
 /* Enable various audio drivers */
 #define SDL_AUDIO_DRIVER_ANDROID    1
-#define SDL_AUDIO_DRIVER_OPENSLES   1
+//#define SDL_AUDIO_DRIVER_OPENSLES   0
 #define SDL_AUDIO_DRIVER_AAUDIO     1
 #define SDL_AUDIO_DRIVER_DUMMY  1
 
@@ -171,11 +171,11 @@
 #define SDL_VIDEO_DRIVER_ANDROID 1
 
 /* Enable OpenGL ES */
-#define SDL_VIDEO_OPENGL_ES 1
-#define SDL_VIDEO_OPENGL_ES2 1
-#define SDL_VIDEO_OPENGL_EGL 1
-#define SDL_VIDEO_RENDER_OGL_ES 1
-#define SDL_VIDEO_RENDER_OGL_ES2    1
+//#define SDL_VIDEO_OPENGL_ES 0
+//#define SDL_VIDEO_OPENGL_ES2 0
+//#define SDL_VIDEO_OPENGL_EGL 0
+//#define SDL_VIDEO_RENDER_OGL_ES 0
+//#define SDL_VIDEO_RENDER_OGL_ES2    0
 
 /* Enable Vulkan support */
 /* Android does not support Vulkan in native code using the "armeabi" ABI. */
