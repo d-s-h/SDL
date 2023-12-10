@@ -49,7 +49,8 @@ int Android_CreateWindow(_THIS, SDL_Window *window)
     }
 
     /* Set orientation */
-    Android_JNI_SetOrientation(window->w, window->h, window->flags & SDL_WINDOW_RESIZABLE, SDL_GetHint(SDL_HINT_ORIENTATIONS));
+    // EBRU: getenv() doesn't work on Android (both arm and x64), so hardcode the hint to portrait instead of taking it from the manifest.
+    Android_JNI_SetOrientation(window->w, window->h, window->flags & SDL_WINDOW_RESIZABLE, "Portrait");
 
     /* Adjust the window data to match the screen */
     window->x = 0;
