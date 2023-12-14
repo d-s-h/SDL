@@ -684,7 +684,7 @@ void *SDL_GetDisplayDriverData(int displayIndex)
 
 SDL_bool SDL_IsVideoContextExternal(void)
 {
-    return SDL_GetHintBoolean(SDL_HINT_VIDEO_EXTERNAL_CONTEXT, SDL_FALSE);
+    return SDL_GetHintBoolean(SDL_HINT_VIDEO_EXTERNAL_CONTEXT, SDL_TRUE);
 }
 
 const char *SDL_GetDisplayName(int displayIndex)
